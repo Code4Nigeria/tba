@@ -256,6 +256,7 @@ ul {
   padding: 250px 0;
   background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/tba.jpg') no-repeat top, linear-gradient(180deg, #f2f4f7 10%, #ffffff 60%);
   background-size: cover;
+  background-position: 0;
   background-blend-mode: multiply;
   max-height: 1000px;
 }
