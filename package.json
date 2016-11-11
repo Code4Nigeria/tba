@@ -1,0 +1,31 @@
+{
+  "name": "Traditional-Birth-Attendants",
+  "version": "1.0.0",
+   "engines": {
+    "node": "0.12.7"
+  },
+  "description": "front end implementation for Traditional Birth Attendants",
+  "main": "server.js",
+  "scripts": {
+    "test": "\"echo hello world\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codefornigeria/tba.git"
+  },
+  "keywords": [
+    "Birth",
+    "Traditional",
+    "Infant Mortality",
+    "Health"
+  ],
+  "author": "tobi oladele , inioluwa adebanjo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codefornigeria/tba.git"
+  },
+  "homepage": "https://github.com/codefornigeria/tba#readme",
+  "dependencies": {
+    "node-static": "^0.7.7"
+  }
+}
