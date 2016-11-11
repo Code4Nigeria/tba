@@ -223,12 +223,13 @@ ul {
     width: 500px;
     height: 100vh;
     overflow-x: scroll;
-    background: #fe3636;
+    background: #383838;
     transform: translate3d(-500px,0,0);
     position: fixed;
     top: 0;
     transition: -webkit-transform .35s;
     transition: transform .35s;
+    color: @brand-primary;
     @media @mobile {
         width: 100%;
         padding: 100px 0;
@@ -248,7 +249,7 @@ ul {
         cursor: pointer;
         margin-bottom: .1em;
         &:hover {
-            color: @brand-primary;
+            color: @brand-red;
             // text-decoration: underline;
             transition: .35s;
         }

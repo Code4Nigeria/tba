@@ -194,12 +194,13 @@ ul {
   width: 500px;
   height: 100vh;
   overflow-x: scroll;
-  background: #fe3636;
+  background: #383838;
   transform: translate3d(-500px, 0, 0);
   position: fixed;
   top: 0;
   transition: -webkit-transform 0.35s;
   transition: transform .35s;
+  color: #ffffff;
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
   .menu-panel {
@@ -225,7 +226,7 @@ ul {
   margin-bottom: .1em;
 }
 .menu-panel li:hover {
-  color: #ffffff;
+  color: #fe3636;
   transition: .35s;
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
