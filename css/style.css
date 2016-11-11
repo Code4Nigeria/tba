@@ -253,7 +253,7 @@ ul {
 }
 .hero {
   padding: 250px 0;
-  background: url('../img/maternity.jpg') no-repeat top, linear-gradient(180deg, #f2f4f7 10%, #ffffff 60%);
+  background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)), url('../img/tba.jpg') no-repeat top, linear-gradient(180deg, #f2f4f7 10%, #ffffff 60%);
   background-size: cover;
   background-blend-mode: multiply;
   max-height: 1000px;
@@ -266,11 +266,10 @@ ul {
 }
 .hero .hero-message h1 {
   font-size: 50px;
-  line-height: 1em;
+  line-height: 1.3em;
   margin-bottom: 30px;
   text-align: center;
   color: #ffffff;
-  opacity: 0;
 }
 @media all and (min-width: 320px) and (max-width: 767px) {
   .hero .hero-message h1 {
@@ -425,7 +424,7 @@ ul {
   }
 }
 .contact form {
-  width: 60%;
+  width: 40%;
   max-width: 800px;
   border: 1px dashed #999999;
   padding: 50px;
