@@ -405,7 +405,7 @@ ul {
   }
 }
 .contact {
-  background: #fe3636;
+  background: #383838;
   padding: 50px 0;
 }
 .contact h1 {
@@ -413,20 +413,58 @@ ul {
   color: white;
   text-transform: uppercase;
 }
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .contact h1 {
+    font-size: 1.2em;
+    line-height: 1.3em;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .contact h1 br {
+    display: none;
+  }
+}
 .contact form {
   width: 60%;
   max-width: 800px;
-  border: 1px dashed white;
+  border: 1px dashed #999999;
   padding: 50px;
   margin: 50px auto;
+  margin-bottom: 0;
+}
+@media all and (min-width: 320px) and (max-width: 767px) {
+  .contact form {
+    width: 90%;
+    padding: 20px;
+  }
 }
 .contact form input {
   border: 0;
   width: 100%;
-  padding: 15px;
+  padding: 15px 0;
   margin-bottom: 15px;
+  background: none;
+  border-bottom: 2px solid #999999;
+  outline: none;
+  color: white;
 }
 .contact form textarea {
   width: 100%;
   padding: 15px;
+  margin-bottom: 15px;
+  border: 0;
+  border-bottom: 2px solid #999999;
+  background: none;
+  border-top: 0;
+  color: white;
+  outline: none;
+}
+.footer {
+  width: 100%;
+  height: 50px;
+  background: #000000;
+  line-height: 50px;
+  font-size: 12px;
+  text-align: center;
+  color: white;
 }
