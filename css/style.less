@@ -76,7 +76,7 @@ ul {
 @brand-primary: #ffffff;
 @brand-black: #000000;
 @brand-green: #32ad75;
-@brand-red: #FF3C42;
+@brand-red: #FE3636;
 @brand-light: #edebf0;
 @mobile: ~"all and (min-width: 320px) and (max-width: 767px)";
 @notmobile: ~"all and (min-width: 767px)";
@@ -420,6 +420,32 @@ ul {
                     display: none;
                 }
             }
+        }
+    }
+}
+.contact {
+    background: @brand-red;
+    padding: 50px 0;
+    h1 {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+    }
+    form {
+        width: 60%;
+        max-width: 800px;
+        border: 1px dashed white;
+        padding: 50px;
+        margin: 50px auto;
+        input {
+            border: 0;
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            width: 100%;
+            padding: 15px;
         }
     }
 }
