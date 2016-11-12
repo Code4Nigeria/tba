@@ -362,11 +362,17 @@ ul {
             color: #333333;
             box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.08);
             text-align: left;
+            @media @mobile {
+                padding: 20px;
+            }
             p {
                 font-size: 21px;
                 line-height: 1.58;
                 letter-spacing: -.003em;
                 margin-bottom: 29px;
+                @media @mobile {
+                    font-size: 16px;
+                }
             }
         }
         .bg {
