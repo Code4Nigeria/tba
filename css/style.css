@@ -331,6 +331,21 @@ ul {
     height: 100px;
   }
 }
+.story .story-panel .post {
+  width: 100%;
+  padding: 100px;
+  margin-top: -75px;
+  background: white;
+  position: relative;
+  color: #333333;
+  box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+.story .story-panel .post p {
+  font-size: 21px;
+  line-height: 1.58;
+  letter-spacing: -0.003em;
+}
 .story .story-panel .bg {
   width: 100%;
   padding: 50px 0;
