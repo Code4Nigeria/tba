@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!--320-->
+    <title>Traditional Birth Attendants</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="hamburger" id="panel"><img src="img/hamburger.png"></div>
+    <div class="menu-panel" id="menu">
+        <ul>
+            <li>About</li>
+            <li>Why</li>
+            <li>Complications</li>
+            <li>Bad Side</li>
+            <li>Expert's Say</li>
+            <li>Take Survey</li>
+            <li>Tell Your Story</li>
+            <li>Credit</li>        
+        </ul>
+    </div>
+	<section id="slide">
+        <div class="hero">
+        	<a href="#" class="btn btn-primary logo animated fadeInDown" id="logo">Traditional Birth Attendants</a>
+        	<div class="hero-message">
+        		<h1>Not all that glitters is gold</h1>
+        	</div>
+        </div>
+        <div class="story">
+        	<div class="story-panel">
+        		<div class="post">
+        			<p>
+        				Although the women tell glowing tales of their TBA encounters, and others justify their visits to them, there are some others who tell a different story.
+                    </p>
+                    <p>
+                        Madam Jane, a mother of three in Maraba, a suburb near the FCT, recalled her ordeal in the hands of the TBA and vowed never to visit any again.
+                    </p>
+                    <p>
+                       "My first labour started very late in the night, and because my husband does not have a car, and considering the high charges in the private clinic in the neighbourhood, my husband took me to the TBA, I nearly lost my life following the complications that arose, and instead of telling us the truth, the old birth attendant kept us in her house for three days and I was suffering seriously. I nearly died," Jane said.
+                    </p>
+                    <p>
+                       Another woman, Ada said she almost died patronizing a TBA thinking hospitals were expensive. "We had just moved into Abuja from Imo State and considering the high cost of things in Abuja, I went to a popular TBA near my house thinking I was cutting cost, not knowing that I was digging my own grave."
+                    </p>
+                    <p>
+                        "My husband is a policeman and we didn't have enough money for me to travel to the village to enable my mother attend to me, so I registered with this woman near my house. I am lucky to be alive today. The hygienic situation in her home is not good, and she was patching me up with any cloth she could lay her hands on when I started bleeding," Ada added.
+                    </p>
+        		</div>
+        	</div>
+        </div>
+        <div class="contact">
+            <h1>Share your experience with TBAs 
+                <br>
+                or health facilities
+            </h1>
+
+            <form>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email address">
+                <input type="phone" name="" placeholder="Phone Number">
+                <textarea rows="1" cols="10" placeholder="Message..."></textarea>
+                <button class="btn btn-red">Send</button>
+            </form>
+        </div>
+        <footer class="footer">
+            &copy 2016 Traditional Birth Attendants | Daily Trust Nigeria
+        </footer>
+    </section>
+</body>
+<!-- <script src="js/vendor/jquery.js"></script> -->
+<script src="js/app.js"></script>
+<script>
+	var show_nav = false;
+  	var ham = document.getElementById('panel');
+    var slide = document.getElementById('slide');
+  	var menu = document.getElementById('menu');
+	ham.addEventListener('click', function(event) {
+		if (show_nav === false) {
+			show_nav = true;
+            addClass(slide, "slide");
+			addClass(menu, "menu_slide");
+		}
+		else {
+			removeClass(slide, "slide");
+            removeClass(menu, "menu_slide");
+			show_nav = false;
+		}
+	});
+</script>
+<script>
+	var logo = document.getElementById('logo')
+	var desired_height = 100;
+	window.onscroll = function() {
+	    var top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+	    if (top > desired_height) {
+	        addClass(logo, "hidden");
+	    }
+	    if (top < desired_height) {
+	        removeClass(logo, "hidden");
+	    }
+	};
+</script>
+<script>
+	function removeClass(el, className) {
+	    if (el.classList)
+	        el.classList.remove(className);
+	    else
+	        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+	}
+
+	function addClass(el, className) {
+	    if (el.classList)
+	        el.classList.add(className);
+	    else
+	        el.className += ' ' + className;
+	}
+</script>
+</html>
