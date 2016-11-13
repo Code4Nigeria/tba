@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!--320-->
+    <title>Traditional Birth Attendants</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="hamburger" id="panel"><img src="img/hamburger.png"></div>
+    <div class="menu-panel" id="menu">
+        <ul>
+            <li>About</li>
+            <li>Why</li>
+            <li>Complications</li>
+            <li>Bad Side</li>
+            <li>Expert's Say</li>
+            <li>Take Survey</li>
+            <li>Tell Your Story</li>
+            <li>Credit</li>        
+        </ul>
+    </div>
+	<section id="slide">
+        <div class="hero">
+        	<a href="#" class="btn btn-primary logo animated fadeInDown" id="logo">Traditional Birth Attendants</a>
+        	<div class="hero-message">
+        		<h1>Attitude VS Attitude</h1>
+        	</div>
+        </div>
+        <div class="story">
+        	<div class="story-panel">
+        		<div class="post">
+        			<p>
+        				Extra care and attention from TBAs as against nurses in the hospitals is another reason women stick with them.
+                    </p>
+                    <p>
+                        Attitude of TBAs compared to the attitude of nurses, is a significant factor in the choices available to an expectant mother when she goes for her delivery. Recounting her experience, Larai Patrick said: "When I went to have my first baby, the pain was unbearable. The nurse kept slapping my thighs and raining abuses on me. Even after the labour pains ended, I was still writhing in pains from the slaps and her very unkind words."
+                    </p>
+                    <p>
+                        "When I got pregnant again, a friend introduced me to the Hajiya who helped her, and that's where I went to deliver my other three children," the Galwuyi resident of Bwari Area Council added.
+                    </p>
+                    <p>
+                        Another woman, Jummai Hamza, said TBAs take care of the babies more than nurses. "All these young nurses don't want to mess their hands and therefore don't clean/bathe the babies well. The TBAs take their time to do this and also encourage you ,the new mother," she said.
+                    </p>
+                    <p>
+                        Adding that: "They bring you all sorts of specially prepared meals to help you heal and get your body back. They massage your body and make you sit in hot water to heal the wound. 
+                        While they are doing this, they are praying for you and the baby.
+                    </p>
+                    <p>
+                        "Even when the child is growing, they are proud to show off that he is one of their products," she said of Jigawa's TBAs. She emphasised : "they maintain a relationship with you forever.
+                    </p>
+                    <p>
+                        "With them, I don't miss that my mother isn't around me when I give birth," she quipped.
+        			</p>
+        		</div>
+        	</div>
+        </div>
+        <div class="contact">
+            <h1>Share your experience with TBAs 
+                <br>
+                or health facilities
+            </h1>
+
+            <form>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email address">
+                <input type="phone" name="" placeholder="Phone Number">
+                <textarea rows="1" cols="10" placeholder="Message..."></textarea>
+                <button class="btn btn-red">Send</button>
+            </form>
+        </div>
+        <footer class="footer">
+            &copy 2016 Traditional Birth Attendants | Daily Trust Nigeria
+        </footer>
+    </section>
+</body>
+<!-- <script src="js/vendor/jquery.js"></script> -->
+<script src="js/app.js"></script>
+<script>
+	var show_nav = false;
+  	var ham = document.getElementById('panel');
+    var slide = document.getElementById('slide');
+  	var menu = document.getElementById('menu');
+	ham.addEventListener('click', function(event) {
+		if (show_nav === false) {
+			show_nav = true;
+            addClass(slide, "slide");
+			addClass(menu, "menu_slide");
+		}
+		else {
+			removeClass(slide, "slide");
+            removeClass(menu, "menu_slide");
+			show_nav = false;
+		}
+	});
+</script>
+<script>
+	var logo = document.getElementById('logo')
+	var desired_height = 100;
+	window.onscroll = function() {
+	    var top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+	    if (top > desired_height) {
+	        addClass(logo, "hidden");
+	    }
+	    if (top < desired_height) {
+	        removeClass(logo, "hidden");
+	    }
+	};
+</script>
+<script>
+	function removeClass(el, className) {
+	    if (el.classList)
+	        el.classList.remove(className);
+	    else
+	        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+	}
+
+	function addClass(el, className) {
+	    if (el.classList)
+	        el.classList.add(className);
+	    else
+	        el.className += ' ' + className;
+	}
+</script>
+</html>
