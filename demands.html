@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/vnd.microsoft.icon" />
+    <!--320-->
+    <title>Traditional Birth Attendants</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="hamburger" id="panel"><img src="img/hamburger.png"></div>
+    <div class="menu-panel" id="menu">
+        <ul>
+            <li>About</li>
+            <li>Why</li>
+            <li>Complications</li>
+            <li>Bad Side</li>
+            <li>Expert's Say</li>
+            <li>Take Survey</li>
+            <li>Tell Your Story</li>
+            <li>Credit</li>        
+        </ul>
+    </div>
+	<section id="slide">
+        <div class="hero">
+        	<a href="#" class="btn btn-primary logo animated fadeInDown" id="logo">Traditional Birth Attendants</a>
+        	<div class="hero-message">
+        		<h1>Hospital VS TBA Demands</h1>
+        	</div>
+        </div>
+        <div class="story">
+        	<div class="story-panel">
+        		<div class="post">
+        			<p>
+        				"When you go to the hospital, they ask for so many things and even if you cannot afford them, you have to buy," said Ajumma Idris.
+                    </p>
+                    <p>
+                        According to her, "the painful thing is that those government nurses don't always return what you didn't use."
+                    </p>
+                    <p>
+                        The Nasarawa mother of two who had her second baby at a TBA's said: "I only had to buy Dettol and spirit. I used the clothes I wore when I had the senior child, and I took palm kernel oil and shea butter along with me. In the hospital I would have been ashamed of the smell and would have gone to buy baby oil or some other fancy item and new cloths.
+                    </p>
+                    <p>
+                       "Many of us are forced to go out of our means in a quiet competition with other mothers who come to hospitals with nice things," Idris added.
+                    </p>
+                    <p>
+                        Crowning this, Idris said, is the fact that TBA deliveries are at no cost beyond a few yards of fabrics or GL jewelry to say 'thank you', unlike the bills which have to be paid in the hospitals.
+                    </p>
+        		</div>
+        	</div>
+        </div>
+        <div class="contact">
+            <h1>Share your experience with TBAs 
+                <br>
+                or health facilities
+            </h1>
+
+            <form>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email address">
+                <input type="phone" name="" placeholder="Phone Number">
+                <textarea rows="1" cols="10" placeholder="Message..."></textarea>
+                <button class="btn btn-red">Send</button>
+            </form>
+        </div>
+        <footer class="footer">
+            &copy 2016 Traditional Birth Attendants | Daily Trust Nigeria
+        </footer>
+    </section>
+</body>
+<!-- <script src="js/vendor/jquery.js"></script> -->
+<script src="js/app.js"></script>
+<script>
+	var show_nav = false;
+  	var ham = document.getElementById('panel');
+    var slide = document.getElementById('slide');
+  	var menu = document.getElementById('menu');
+	ham.addEventListener('click', function(event) {
+		if (show_nav === false) {
+			show_nav = true;
+            addClass(slide, "slide");
+			addClass(menu, "menu_slide");
+		}
+		else {
+			removeClass(slide, "slide");
+            removeClass(menu, "menu_slide");
+			show_nav = false;
+		}
+	});
+</script>
+<script>
+	var logo = document.getElementById('logo')
+	var desired_height = 100;
+	window.onscroll = function() {
+	    var top = (window.pageYOffset || document.scrollTop) - (document.clientTop || 0);
+	    if (top > desired_height) {
+	        addClass(logo, "hidden");
+	    }
+	    if (top < desired_height) {
+	        removeClass(logo, "hidden");
+	    }
+	};
+</script>
+<script>
+	function removeClass(el, className) {
+	    if (el.classList)
+	        el.classList.remove(className);
+	    else
+	        el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
+	}
+
+	function addClass(el, className) {
+	    if (el.classList)
+	        el.classList.add(className);
+	    else
+	        el.className += ' ' + className;
+	}
+</script>
+</html>
