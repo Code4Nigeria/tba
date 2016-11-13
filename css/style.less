@@ -284,6 +284,9 @@ ul {
     background-position: 0;
     background-blend-mode: multiply;
     max-height: 1000px;
+    @media @mobile {
+        background-position: -351px 0;
+    }
     .hero-message {
         width: 900px;
         max-width: 90%;
@@ -297,7 +300,7 @@ ul {
             color: @brand-primary;
             // opacity: 0;
             @media @mobile {
-                font-size: 45px;
+                font-size: 24px;
             }
         }
         .right-now-call-to-action {
